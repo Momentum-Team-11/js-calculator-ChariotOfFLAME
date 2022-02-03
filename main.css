@@ -1,0 +1,49 @@
+body {
+    /* font-family: ; */
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: limegreen;
+    width: 25vw;
+    height: 30vh;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 25vw;
+    height: 30vh;
+}
+
+.click-lighten { /* added to DOM through main.js */
+    background-color: lightgreen;
+}
