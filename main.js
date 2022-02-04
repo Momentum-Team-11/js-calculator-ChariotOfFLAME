@@ -32,14 +32,14 @@
 let results = document.getElementById("results") //make the results box an object
 let math = Array.from(document.getElementsByClassName("math")); //make all the buttons into an array
 
-math.map( button => { //loop over the array and call each element "button" when called, then...
+math.map( button => { //loop over the array, making an element an object and naming it "button" if called, then...
     button.addEventListener('click', function(event) { //make each "button" clicky, passing the function to the object "event"
-        switch(event.target.innerText){ //evaluate the inner text of each button, and
+        switch(event.target.innerText){ //evaluate the inner text of whatever was clicked, and...
             case "C": //if it's "C"
                 results.innerText = '' //change the inner text of the results box to an empty string
                 break; //don't do anything else
             case '=': //if it's "="
-                results.innerText = eval(results.innerText) //make the inner text of the results box the evaluation of what was in there already
+                results.innerText = eval(results.innerText) //make the inner text of the solution of what was in there already
                 break;
             case "x": //if it's "x"
                 results.innerText += '*' //add "*" to the string INSTEAD of "x" (as eval breaks with "x" in the string)
